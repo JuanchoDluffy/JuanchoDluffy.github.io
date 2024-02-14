@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desk-nav">
+      <div class="logo">Juan Torres</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="burger">
+      <div class="logo-b">Juan Torres</div>
+      <div class="burger-menu">
+        <div class="burger-icon" onclick="activateMenue()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="burger-menu-links">
+          <li><a href="index.html" onclick="activateMenue()">Home</a></li>
+
+          <li><a href="about.html" onclick="activateMenue()">About</a></li>
+          <li>
+            <a href="experience.html" onclick="activateMenue()">Experience</a>
+          </li>
+          <li>
+            <a href="projects.html" onclick="activateMenue()">Projects</a>
+          </li>
+          <li><a href="contact.html" onclick="activateMenue()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <p class="title_about">Know More about Me</p>
+
+    <section id="About">
+      <div class="cool_picture_container">
+        <img src="coolProfiel.jpg" alt="cool photo" class="coolPic" />
+      </div>
+      <div class="details_container">
+        <div class="about-containers">
+          <div class="cotainer">
+            <h3>Experience</h3>
+            <p>3+ years <br />Reinforcement learning</p>
+          </div>
+          <div class="cotainer">
+            <h3>Education</h3>
+            <p>
+              Bachelors Degree<br />
+              Computer Science
+            </p>
+          </div>
+          <div class="cotainer">
+            <h3>Hobbies</h3>
+            <p>
+              Gaming<br />
+              Chess soccer
+            </p>
+          </div>
+        </div>
+
+        <div class="text_Container">
+          <p class="pg">
+            Hello there! It seems you've stumbled upon my corner of the web,
+            eager to learn a bit more about me. I'm a passionate programmer from
+            Mexico, embracing the term "brogrammer," with interests in good
+            food, gaming, and crafting cool creations. Currently, I am pursuing
+            my Bachelor's degree in Computer Science at New Mexico State
+            University. Feel free to connect with me on LinkedIn or email me
+            regarding any professional opportunities you might have for me. See
+            you, space cowboy!
+            <br />
+            <br />
+            <br />
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+  <footer>&copy; 2024 JPT.LLC.INC.ORG. All rights reserved.</footer>
+</html>

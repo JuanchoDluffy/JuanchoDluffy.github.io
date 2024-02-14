@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desk-nav">
+      <div class="logo">Juan Torres</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="burger">
+      <div class="logo-b">Juan Torres</div>
+      <div class="burger-menu">
+        <div class="burger-icon" onclick="activateMenue()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="burger-menu-links">
+          <li><a href="index.html" onclick="activateMenue()">Home</a></li>
+          <li><a href="about.html" onclick="activateMenue()">About</a></li>
+          <li>
+            <a href="experience.html" onclick="activateMenue()">Experience</a>
+          </li>
+          <li><a href="#Projects" onclick="activateMenue()">Projects</a></li>
+          <li><a href="contact.html" onclick="activateMenue()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="landing-profile">
+      <div class="picture_cont">
+        <img
+          src="profilePhote.png"
+          alt="Proflie goes here"
+          class="picture_cont"
+        />
+      </div>
+      <div class="intro_text">
+        <p class="intro_text_p1">howdy, I,am</p>
+        <h1 class="title">Juan Torres</h1>
+        <p class="intro_text_p2">Software Developer</p>
+        <div class="button_container">
+          <button class="cv" onclick="window.open('resumeJPT.pdf')">
+            Download CV
+          </button>
+        </div>
+        <div class="social_cont">
+          <img
+            src="roundLinkin.webp"
+            alt="my LinkedIn"
+            class="icon"
+            onclick="location.href ='https://www.linkedin.com/'"
+          />
+          <img
+            src="gramlogo.jpeg"
+            alt="my Insta"
+            class="icon"
+            onclick="location.href ='https://www.instagram.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+  <footer>&copy; 2024 JPT.INC.LLC.ORG.GOV. All rights reserved.</footer>
+</html>
