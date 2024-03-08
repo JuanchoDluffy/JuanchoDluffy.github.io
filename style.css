@@ -1,412 +1,116 @@
-/* general configs */
+h1 {
+  color: #ebfcfb;
+  font-size: larger;
+  font-family: "LVDC Game Over 2", sans-serif;
+}
 
-* {
-  padding: 0%;
-  margin: 0%;
-}
-body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-html {
-  scroll-behavior: smooth;
+h2 {
+  color: #ebfcfb;
+  font-size: medium;
+  font-family: "LVDC Game Over 2", sans-serif;
 }
 p {
-  color: rgb(85, 85, 85);
+  color: #ebfcfb;
+  font-size: small;
+  font-family: "LVDC Game Over 2", sans-serif;
 }
-
-/* transition */
-
-a,
-.button {
-  transition: all 300ms ease;
-}
-
-/*desk navegation */
-nav,
-.nav-links {
-  display: flex;
-}
-nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 12vh;
-  background-color: #23b5d3;
-}
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-}
-a {
-  color: #f4f4ed;
-  text-decoration: none;
-  text-decoration-color: white;
-}
-
-a:hover {
-  color: #070600;
-  text-decoration: underline;
-  text-underline-offset: 1.5rem;
-}
-.logo {
-  font-size: 3rem;
-  color: #f7f7ff;
-}
-.logo:hover {
-  cursor: default;
-}
-/*burger menu */
-#burger {
-  display: none;
-}
-.logo-b {
-  font-size: 4rem;
-  color: #23b5d3;
-}
-.logo-b:hover {
-  cursor: default;
-}
-
-.burger-menu {
-  position: relative;
-  display: inline-block;
-}
-.burger-icon {
+body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
-}
-.burger-icon span {
-  width: 100%;
-  height: 3px;
-  background-color: #23b5d3;
-  transition: all 1 ease-in-out;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
 }
 
-.burger-menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0%;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
+.score-container {
+  display: flex;
+}
+.score {
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+.stadium {
+  background-color: black;
+  position: relative;
+  width: 50rem;
+  height: 30rem;
+  border: 0.5rem solid #ebfcfb;
   overflow: hidden;
-  transition: all 1 ease-in-out;
-}
-
-.burger-menu-links a {
-  display: block;
-  padding: 10px;
-  font-size: 1.5rem;
-  color: #23b5d3;
-  text-decoration: none;
-  transition: all 1 ease-in-out;
-}
-
-.burger-menu-links li {
-  list-style-type: none;
-}
-.burger-menu-links.open {
-  max-height: 300px;
-}
-.burger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-.burger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-.burger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-.burger-icon span:first-child {
-  transform: none;
-}
-.burger-icon span:first-child {
-  opacity: 1;
-}
-.burger-icon span:first-child {
-  transform: none;
-}
-/* landing */
-
-section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  display: flex;
-  min-height: fit-content;
-}
-
-.section-container {
-  display: flex;
-}
-
-#landing-profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 81.5vh;
-}
-
-.picture_cont {
-  display: flex;
-  height: 55vh;
-  margin: auto 0;
-}
-.picture_cont img {
-  border-radius: 100%;
-
-  box-shadow: 0 10px 10px rgba(35, 181, 211, 0.5);
-}
-
-.intro_text {
   align-self: center;
-  text-align: center;
 }
 
-.intro_text p {
-  font-weight: 600;
+.player {
+  position: absolute;
+  width: 12px;
+  height: 80px;
+  top: 40%;
+  background-color: white;
+  border-radius: 20%;
 }
 
-.intro_text_p1 {
-  text-align: center;
-  font-size: 1.75rem;
+#net {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  left: 50%;
+  background: repeating-linear-gradient(
+    to bottom,
+    white,
+    white 5px,
+    transparent 5px,
+    transparent 10px
+  );
 }
 
-.intro_text_p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+#P1 {
+  left: 10px;
 }
 
-.title {
-  font-size: 3rem;
-  text-align: center;
+#P2 {
+  right: 10px;
 }
 
-#social_cont {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  left: 47%;
+  top: 45%;
 }
-#social_cont img {
-  border-radius: 50%;
+.button_container {
+  padding-top: 2rem;
+  padding-bottom: 2em;
 }
-/* ICONS */
-.icon {
-  padding-top: 1rem;
-  cursor: pointer;
-  height: 5rem;
-  border-radius: 100%;
-}
-/* Buttons */
-
-.cv {
+.start {
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #23b5d3;
-  color: #ffffff;
+  font-size: medium;
+  font-family: "LVDC Game Over 2", sans-serif;
+  background-color: white;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.cv:hover {
+.start:hover {
   background-color: #070600;
+  color: #ebfcfb;
 }
 
-/* About page */
-.details_container {
-  padding-top: 3rem;
-  position: relative;
-  justify-content: center;
-  flex-direction: column;
-  height: 40vh;
-}
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-.about-containers,
-.details_container {
-  display: flex;
-}
-.cool_picture_container {
-  display: flex;
-  height: 700px;
-  width: 850px;
-}
-.coolPic {
-  border-radius: 10%;
-  height: 65vh;
-  width: 75vh;
-  border: 2px solid #23b5d3;
-
-  box-shadow: 0 10px 10px rgba(35, 181, 211, 0.5);
-}
-.cotainer {
-  flex: 1;
-  padding: 2rem;
-  border-radius: 2rem;
-  border: 2px solid #23b5d3;
-  text-align: center;
-  box-shadow: 0 10px 10px rgba(35, 181, 211, 0.5);
-}
-
-section div {
-  margin: 10px;
-  justify-content: center;
-  position: relative;
-}
-footer {
-  background-color: #333;
+.gameOverMessage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  margin: 0%;
-  width: 100%;
-}
-#About {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 88vh;
-}
-.title_about {
-  padding-top: 1rem;
-  font-size: 3rem;
-  text-align: center;
-}
-.pg {
-  font-size: 1.3rem;
-}
-
-/* Experience */
-.title_exp {
-  padding-top: 1rem;
-  padding-bottom: 5rem;
-  font-size: 3rem;
-  text-align: center;
-}
-
-/* contact */
-#contact {
-  display: flex;
-  justify-content: center;
+  display: none;
   flex-direction: column;
-  height: 70vh;
-}
-.contact-info-uc {
-  display: flex;
   justify-content: center;
-  border-radius: 2rem;
-  border: #23b5d3 0.1rem solid;
-  margin: 2rem auto;
-  padding: 0.5rem;
-  box-shadow: 0 10px 10px rgba(35, 181, 211, 0.5);
-}
-.connect-info {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-.email a {
-  font-size: large;
-  color: #070600;
-}
-
-.email a:hover {
-  color: #070600;
-  text-decoration: underline;
-  text-underline-offset: 1.5rem;
-}
-.icon-con {
-  padding-top: 1rem;
-  cursor: pointer;
-  height: 3rem;
-  border-radius: 100%;
-}
-.title_con {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 3rem;
-  text-align: center;
-}
-
-#contact {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 81.5vh;
-}
-
-/*projects*/
-
-#projects {
-  position: relative;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: #23b5d3 0.1rem solid;
-  text-align: center;
-  align-items: center;
-  box-shadow: 0 10px 10px rgba(35, 181, 211, 0.5);
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-.projects_title {
-  padding-top: 2rem;
-  text-align: center;
-  font-size: large;
-}
-.title {
-  font-size: 3rem;
-  text-align: center;
-}
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-.project-title {
   text-align: center;
 }
